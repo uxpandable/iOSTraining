@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,6 +44,9 @@
                                 <state key="normal" title="Chapter 1 - Views and AutoLayout ">
                                     <color key="titleColor" red="0.006102436687797308" green="0.53745883703231812" blue="0.72061896324157715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4W6-0T-8j2" kind="show" id="j9y-6y-0yp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="VViews, their hierarchy, visibility and position." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdZ-4R-nWb">
                                 <frame key="frameInset" minX="16" minY="92" width="325" height="21"/>
@@ -68,6 +72,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ztM-dm-m9p">
+            <objects>
+                <viewController id="4W6-0T-8j2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCw-xS-iOB"/>
+                        <viewControllerLayoutGuide type="bottom" id="RfF-y7-aVX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6vv-vv-iow">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 1 - Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcT-Lg-89Q">
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.53909691510000002" blue="0.72289419420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rto-za-N9h">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M71-bn-bgl">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="0VG-bo-OLw"/>
+                                            <constraint firstAttribute="width" constant="239" id="Vho-gs-05U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <state key="normal" title="Chapter 1 - Views and AutoLayout ">
+                                            <color key="titleColor" red="0.006102436688" green="0.53745883699999997" blue="0.72061896319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zBm-A0-wAG" kind="show" id="d0z-P7-39S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VViews, their hierarchy, visibility and position." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmT-UY-Dvt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="riT-GJ-yiI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                <color key="textColor" red="0.21960784310000001" green="0.26274509800000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EcT-Lg-89Q" firstAttribute="leading" secondItem="6vv-vv-iow" secondAttribute="leadingMargin" id="0eB-1I-eSy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EcT-Lg-89Q" secondAttribute="trailing" constant="86" id="2DN-MX-fBv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dmT-UY-Dvt" secondAttribute="trailing" constant="18" id="BVE-v7-7Ey"/>
+                            <constraint firstItem="RfF-y7-aVX" firstAttribute="top" secondItem="EcT-Lg-89Q" secondAttribute="bottom" constant="609" id="DDO-cU-zCZ"/>
+                            <constraint firstItem="Rto-za-N9h" firstAttribute="leading" secondItem="dmT-UY-Dvt" secondAttribute="leading" id="SiO-rA-ySO"/>
+                            <constraint firstItem="dmT-UY-Dvt" firstAttribute="top" secondItem="EcT-Lg-89Q" secondAttribute="bottom" constant="31" id="X1c-en-QUt"/>
+                            <constraint firstItem="Rto-za-N9h" firstAttribute="leading" secondItem="EcT-Lg-89Q" secondAttribute="leading" id="kOx-CD-3JM"/>
+                            <constraint firstItem="EcT-Lg-89Q" firstAttribute="top" secondItem="vCw-xS-iOB" secondAttribute="bottom" id="oBK-nB-aeN"/>
+                            <constraint firstItem="Rto-za-N9h" firstAttribute="top" secondItem="EcT-Lg-89Q" secondAttribute="bottom" constant="8" symbolic="YES" id="sNp-ww-mnb"/>
+                            <constraint firstItem="dmT-UY-Dvt" firstAttribute="leading" secondItem="6vv-vv-iow" secondAttribute="leadingMargin" id="vyX-AU-LbM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtr-r7-ewL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.60000000000002" y="-86.806596701649184"/>
+        </scene>
+        <!--One One View Controller-->
+        <scene sceneID="52G-FL-Skp">
+            <objects>
+                <viewController id="zBm-A0-wAG" customClass="oneOneViewController" customModule="iOSTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QsQ-4Q-zhz"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Q2-u9-IP5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JPk-9U-c9o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWz-Wx-ybl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700" y="-87"/>
         </scene>
     </scenes>
 </document>

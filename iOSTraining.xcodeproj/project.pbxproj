@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F39FD9B1DA3E53C00FC513F /* oneOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F39FD9A1DA3E53C00FC513F /* oneOneViewController.swift */; };
 		9FA1B15B1DA170EB00A169FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA1B15A1DA170EB00A169FD /* AppDelegate.swift */; };
 		9FA1B15D1DA170EB00A169FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA1B15C1DA170EB00A169FD /* ViewController.swift */; };
 		9FA1B1601DA170EB00A169FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA1B15E1DA170EB00A169FD /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F39FD9A1DA3E53C00FC513F /* oneOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = oneOneViewController.swift; path = "1-1/oneOneViewController.swift"; sourceTree = "<group>"; };
 		9FA1B1571DA170EB00A169FD /* iOSTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA1B15A1DA170EB00A169FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA1B15C1DA170EB00A169FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F39FD9C1DA3E54800FC513F /* 1-1 */ = {
+			isa = PBXGroup;
+			children = (
+				9F39FD9A1DA3E53C00FC513F /* oneOneViewController.swift */,
+			);
+			name = "1-1";
+			sourceTree = "<group>";
+		};
 		9FA1B14E1DA170EB00A169FD = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				9FA1B15A1DA170EB00A169FD /* AppDelegate.swift */,
 				9FA1B15C1DA170EB00A169FD /* ViewController.swift */,
 				9FA1B15E1DA170EB00A169FD /* Main.storyboard */,
+				9F39FD9C1DA3E54800FC513F /* 1-1 */,
 				9FA1B1611DA170EB00A169FD /* Assets.xcassets */,
 				9FA1B1631DA170EB00A169FD /* LaunchScreen.storyboard */,
 				9FA1B1661DA170EB00A169FD /* Info.plist */,
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F39FD9B1DA3E53C00FC513F /* oneOneViewController.swift in Sources */,
 				9FA1B15D1DA170EB00A169FD /* ViewController.swift in Sources */,
 				9FA1B15B1DA170EB00A169FD /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +517,7 @@
 				9FA1B1811DA170EB00A169FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FA1B1821DA170EB00A169FD /* Build configuration list for PBXNativeTarget "iOSTrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				9FA1B1841DA170EB00A169FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FA1B1851DA170EB00A169FD /* Build configuration list for PBXNativeTarget "iOSTrainingUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				9FA1B1871DA170EB00A169FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
