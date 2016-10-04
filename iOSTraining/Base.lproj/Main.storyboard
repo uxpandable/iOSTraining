@@ -211,6 +211,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="0.32210236959999999" blue="0.13376921650000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4W6-0T-8j2" kind="show" id="ED0-QR-YDe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,6 +266,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PyA-6N-DTM"/>
+        <segue reference="ED0-QR-YDe"/>
     </inferredMetricsTieBreakers>
 </document>

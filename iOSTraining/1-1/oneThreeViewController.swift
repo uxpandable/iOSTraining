@@ -26,6 +26,9 @@ class oneThreeViewController: UIViewController {
         //Adding views to sub each other.
         mainView?.addSubview(v1)
         v1.addSubview(v2)
+        
+        //Rotate v1 by 45 degrees
+        v1.transform = CGAffineTransform(rotationAngle: 45)
     }
 
     override func didReceiveMemoryWarning() {
